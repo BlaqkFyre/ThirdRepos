@@ -37,6 +37,7 @@
             this.radGeneral = new System.Windows.Forms.RadioButton();
             this.radBox = new System.Windows.Forms.RadioButton();
             this.grpSection = new System.Windows.Forms.GroupBox();
+            this.radStall = new System.Windows.Forms.RadioButton();
             this.cmdCalculate = new System.Windows.Forms.Button();
             this.txtBxDiscount = new System.Windows.Forms.TextBox();
             this.lblDiscount = new System.Windows.Forms.Label();
@@ -123,6 +124,7 @@
             // 
             // grpSection
             // 
+            this.grpSection.Controls.Add(this.radStall);
             this.grpSection.Controls.Add(this.radBox);
             this.grpSection.Controls.Add(this.radGeneral);
             this.grpSection.Controls.Add(this.radBalcony);
@@ -132,6 +134,18 @@
             this.grpSection.TabIndex = 9;
             this.grpSection.TabStop = false;
             this.grpSection.Text = "Section";
+            // 
+            // radStall
+            // 
+            this.radStall.AutoSize = true;
+            this.radStall.Location = new System.Drawing.Point(26, 86);
+            this.radStall.Name = "radStall";
+            this.radStall.Size = new System.Drawing.Size(73, 17);
+            this.radStall.TabIndex = 9;
+            this.radStall.TabStop = true;
+            this.radStall.Text = "Back Stall";
+            this.radStall.UseVisualStyleBackColor = true;
+            this.radStall.Click += new System.EventHandler(this.radStall_Click);
             // 
             // cmdCalculate
             // 
@@ -197,6 +211,7 @@
         private System.Windows.Forms.Button cmdCalculate;
         private System.Windows.Forms.TextBox txtBxDiscount;
         private System.Windows.Forms.Label lblDiscount;
+        private System.Windows.Forms.RadioButton radStall;
     }
 }
 

@@ -39,6 +39,8 @@ namespace Ticketing
                 { mSection = 2; }
             if (radBox.Checked)
                 { mSection = 3; }
+            if (radStall.Checked)
+            { mSection = 4; }
 
             mTicketPrice = new TicketPrice(mSection, mQuantity, mDiscount);
 
@@ -59,6 +61,10 @@ namespace Ticketing
         private void radBox_Click(object sender, EventArgs e)
         {
             txtBxDiscount.Text = "8.0";
+        }
+        private void radStall_Click(object sender, EventArgs e)
+        {
+            txtBxDiscount.Text = "0.0";
         }
     }
 }
