@@ -41,6 +41,7 @@
             this.cmdCalculate = new System.Windows.Forms.Button();
             this.txtBxDiscount = new System.Windows.Forms.TextBox();
             this.lblDiscount = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.grpSection.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -173,11 +174,21 @@
             this.lblDiscount.TabIndex = 12;
             this.lblDiscount.Text = "Discount";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(421, 53);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(158, 13);
+            this.label1.TabIndex = 13;
+            this.label1.Text = "Allan Changed this for the better";
+            // 
             // TicketsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(608, 445);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.lblDiscount);
             this.Controls.Add(this.txtBxDiscount);
             this.Controls.Add(this.cmdCalculate);
@@ -212,6 +223,7 @@
         private System.Windows.Forms.TextBox txtBxDiscount;
         private System.Windows.Forms.Label lblDiscount;
         private System.Windows.Forms.RadioButton radStall;
+        private System.Windows.Forms.Label label1;
     }
 }
 
